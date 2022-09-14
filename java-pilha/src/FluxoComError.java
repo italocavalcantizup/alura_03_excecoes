@@ -1,4 +1,4 @@
-public class Fluxo {
+public class FluxoComError {
 
 	public static void main(String[] args) {
 		System.out.println("Início do main");
@@ -18,11 +18,8 @@ public class Fluxo {
 	}
 
 	public static void metodo2() {
-		System.out.println("Início do método 2");
-		
-		throw new MyException("Deu erro!");
-		
-//		System.out.println("Fim do método 2");
+		System.out.println("Chamando método 2");
+		metodo2();
 	}
 
 }
