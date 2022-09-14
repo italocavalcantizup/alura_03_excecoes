@@ -1,7 +1,7 @@
 
-public class Conta {
+public class Conta extends Exception {
 	
-	void deposita() {
+	void deposita() throws MyException {
 		
 	}
 

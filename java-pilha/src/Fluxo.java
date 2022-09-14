@@ -10,14 +10,14 @@ public class Fluxo {
 		System.out.println("Início do método 1");
 		try {
 			metodo2();			
-		} catch (ArithmeticException | NullPointerException | MyException e) { 
+		} catch (Exception e) { 
 			System.out.println("Exception " + e.getMessage());
 			e.printStackTrace();
 		}
 		System.out.println("Fim do método 1");
 	}
 
-	public static void metodo2() {
+	public static void metodo2() throws MyException {
 		System.out.println("Início do método 2");
 		
 		throw new MyException("Deu erro!");
